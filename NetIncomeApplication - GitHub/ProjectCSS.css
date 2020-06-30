@@ -1,0 +1,57 @@
+﻿body
+{
+    /*background-image: url("white-image.jpg");*/
+    background-color: #39CCCC;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%
+    
+}
+.calcNetIncome
+{
+    font-family: Dubai;
+    color: #fffdd0;
+    
+}
+.ansOne, .ansTwo, .ansThree, .ansFour {
+    font-family: Dubai;
+    color: #fffdd0;
+}
+.container
+{
+    height: 5px;
+    width: 5px;
+    float:left;
+    
+}
+.pieContainer
+{
+    height: 5px;
+    width: 5px;
+    float: right;
+    
+}
+.lblRevenue, .lblCOGS, .lblSalary, .lblRent, .lblUtil, .lblDepr, .lblTaxes {
+   
+    font-family: Dubai;
+    color: #fffdd0;
+}
+
+.inpRevenue, .inpCOGS, .inpSalary, .inpRent, .inpUtil, .inpDepr, .inpTaxes
+{
+    border-radius: 25px;
+    border: transparent;
+    color: #fffdd0;
+    background-color: #00BFFF;
+}
+.btnCalc, .btnReset
+{
+    border-radius: 25px;
+    border: transparent;
+    color: #fffdd0;
+    background-color: #00BFFF;
+    font-size: 13.5pt;
+}
+
+
+

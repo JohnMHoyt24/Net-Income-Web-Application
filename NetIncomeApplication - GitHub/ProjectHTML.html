@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />-->
+    <link rel="icon" type="image/jpg" href="https://images.all-free-download.com/images/graphiclarge/green_globe_money_purse_581.jpg" />
+    <link rel="stylesheet" href="ProjectCSS.css" />
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Net Income Analytics</title>
+</head>
+<body>
+    <main>
+        <div class="divAnswer">
+            <h1 class="calcNetIncome">Calculate Net Income/Net Loss</h1>
+            <h2 id="answer1" class="ansOne"></h2>
+            <h2 id="answer2" class="ansTwo"></h2>
+            <h2 id="answer3" class="ansThree"></h2>
+            <h2 id="answer4" class="ansFour"></h2>
+        </div>
+
+
+        <!--Want to create to be able to generate a bar-chart and a pie-chart by the click of a button!-->
+        <div>
+            <canvas id="myChart" class="container"></canvas><!--This alllows Chart.JS to draw the bar chart on the HTML-->
+        </div>
+
+        <div>
+            <canvas id="pieChart" class="pieContainer"></canvas>
+        </div>
+
+        <div class="divInput">
+            <table>
+                <tr>
+                    <td>
+                        <label class="lblRevenue">
+                            Total Revenue: $
+                            <input type="text" id="num1" class="inpRevenue" value="" />
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+
+                            <label class="lblCOGS">
+                                Cost of Goods Sold: $
+                                <input type="text" id="num2" class="inpCOGS" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <label class="lblSalary">
+                                Salary Expense: $
+                                <input type="text" id="num3" class="inpSalary" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label class="lblRent">
+                                Rent Expense: $
+                                <input type="text" id="num4" class="inpRent" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label class="lblUtil">
+                                Utility Expense: $
+                                <input type="text" id="num5" class="inpUtil" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label class="lblDepr">
+                                Depreciation Expense: $
+                                <input type="text" id="num6" class="inpDepr" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <label class="lblTaxes">
+                                Taxes: $
+                                <input type="text" id="num7" class="inpTaxes" value="" />
+                            </label>
+                            <br />
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <button onclick="calculate()" class="btnCalc">Calculate</button>
+        <!--<button onclick="reset()" id="reset" class="btnReset">Clear Values</button>-->
+        <button class="btnReset" onclick="window.location.reload();">Reset</button>
+
+        <script type="text/javascript" src="ProjectJS.js"></script>
+        <!--The "script" tag will allow the HTML to refer an external JavaScript file-->
+    </main>
+</body>
+</html>
